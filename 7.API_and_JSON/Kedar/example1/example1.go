@@ -20,7 +20,7 @@ type Vehicle2 struct {
 }
 
 func main() {
-/* We will encode slices and maps into JSON array and objects. */
+	/* We will encode slices and maps into JSON array and objects. */
 	slice1 := []string{"BMW", "Mercedes", "Range Rover", "Hummer"}
 	marshal_slice1, err := json.Marshal(slice1)
 	if err != nil {
@@ -36,7 +36,7 @@ func main() {
 	fmt.Println(string(marshal_map1))
 
 	/* The json package can automatically encode custom data types. It will include exported fields in the 
-encoded output and will by default use those names as the keys. */
+	encoded output and will by default use those names as the keys. */
 	response1 := &Vehicle1{
 		Type: 1,
 		Cars: []string{"BMW", "Mercedes", "Range Rover", "Hummer"}}

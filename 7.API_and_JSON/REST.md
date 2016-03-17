@@ -4,7 +4,7 @@ REST has gained widespread acceptance across the Web. RESTful systems typically,
 
 The REST architectural style was developed by W3C Technical Architecture Group (TAG) in parallel with HTTP 1.1, based on the existing design of HTTP 1.0. The World Wide Web represents the largest implementation of a system conforming to the REST architectural style.
 
-### Architectural constraints
+# Architectural constraints
 
 The architectural properties of REST are realized by applying specific interaction constraints to components, connectors, and data elements. The formal REST constraints are:
 

@@ -86,7 +86,9 @@ even this tests for an element but without assigning the value.
 
 Now for some example
 
-Lets try initializing a map
+##### Examples
+
+1) Lets try initializing a map
 
 ```
 package main
@@ -103,6 +105,27 @@ func main() {
 }
 
 ```
-#### Example
+##### Try online here
  ([Go Playground](https://play.golang.org/p/rReyVb16F2))
 
+2) Looping a map
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	commits := map[string]int{
+		"abc": 123,
+		"def": 456,
+		"ghi": 789,
+	}
+	for key, value := range m {
+		fmt.Println("Key:", key, "Value:", value)
+	}
+}
+
+```
+##### Try online here
+ ([Go Playground](https://play.golang.org/p/P37BTIT3fC))

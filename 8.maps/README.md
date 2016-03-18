@@ -94,10 +94,15 @@ package main
 import "fmt"
 
 func main() {
-    commits := map[string]int{
-    "rsc": 3711,
-    "r":   2138,
-    "gri": 1908,
-    "adg": 912,
+	commits := map[string]int{
+		"abc": 123,
+		"def": 456,
+		"ghi": 789,
+	}
+	fmt.Println(commits)
 }
-}
+
+```
+#### Example
+ ([Go Playground](https://play.golang.org/p/rReyVb16F2))
+

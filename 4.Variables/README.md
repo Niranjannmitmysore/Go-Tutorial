@@ -6,7 +6,7 @@ Variables are at the heart of the language and provide the ability to read from 
 ## Variable Definition in Go:
 A variable definition means to tell the compiler where and how much to create the storage for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows:
 
-var variable_list optional_data_type;
+    var variable_list optional_data_type;
 
 Here, optional_data_type is a valid Go data type including byte, int, float32, complex64, boolean or any user-defined object, etc., and variable_list may consist of one or more identifier names separated by commas
 

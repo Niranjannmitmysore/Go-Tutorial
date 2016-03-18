@@ -1,3 +1,10 @@
+    package main
+    import "fmt"
+    func main() {
+      fmt.Println("Hello World")
+    }
+
+
 // Every Go program starts with a package declaration which provides a way for
 // use to reuse code
 

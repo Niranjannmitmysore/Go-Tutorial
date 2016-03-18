@@ -8,30 +8,30 @@ A loop decides how many times to execute another statement.
 
 for loop has three components separated by semicolons:
 
-the init statement: executed before the first iteration
-the condition expression: evaluated before every iteration
-the post statement: executed at the end of every iteration
+* the init statement: executed before the first iteration
+* the condition expression: evaluated before every iteration
+* the post statement: executed at the end of every iteration
 
 The loop will stop iterating once the boolean condition evaluates to false.
 
 
-  for init; condition; post {
-      // run commands till condition is true
-  }
+    for init; condition; post {
+        // run commands till condition is true
+    }
 
 #### Example
 
-  package main
+    package main
 
-  import "fmt"
+    import "fmt"
 
-  func main() {
-    sum := 0
-    for i := 0; i < 10; i++ {
-      sum += i
+    func main() {
+      sum := 0
+      for i := 0; i < 10; i++ {
+        sum += i
+      }
+      fmt.Println(sum)
     }
-    fmt.Println(sum)
-  }
 
 ([Playground](http://play.golang.org/p/BRdFL9QtU8))
 
@@ -43,28 +43,28 @@ The loop will stop iterating once the boolean condition evaluates to false.
 
 C's while is spelled for in Go.
 
-  initialization
+    initialization
 
-  for condition {
-        statements;
-        adjustment;
-  }
+    for condition {
+          statements;
+          adjustment;
+    }
 
 
 
 #### Example
 
-    package main
+      package main
 
-    import "fmt"
+      import "fmt"
 
-    func main() {
-      sum := 1
-      for sum < 10 {
-        sum += sum
+      func main() {
+        sum := 1
+        for sum < 10 {
+          sum += sum
+        }
+        fmt.Println(sum)
       }
-      fmt.Println(sum)
-    }
 
 
 ([Playground](http://play.golang.org/p/gckruLHj8O))
@@ -77,38 +77,38 @@ If you omit the loop condition it loops forever, so an infinite loop is compactl
 
 #### Example
 
-    package main
+      package main
 
-    import "fmt"
+      import "fmt"
 
-    func main() {
-      for {
-        fmt.Println("To infinity and beyond")
+      func main() {
+        for {
+          fmt.Println("To infinity and beyond")
+        }
       }
-    }
 ===================================================================================================
 
 ### If
 
 #### Example
 
-    package main
+      package main
 
-    import (
-      "fmt"
-      "math"
-    )
+      import (
+        "fmt"
+        "math"
+      )
 
-    func sqrt(x float64) string {
-      if x < 0 {
-        return sqrt(-x) + "i"
+      func sqrt(x float64) string {
+        if x < 0 {
+          return sqrt(-x) + "i"
+        }
+        return fmt.Sprint(math.Sqrt(x))
       }
-      return fmt.Sprint(math.Sqrt(x))
-    }
 
-    func main() {
-      fmt.Println(sqrt(2), sqrt(-4))
-    }
+      func main() {
+        fmt.Println(sqrt(2), sqrt(-4))
+      }
 
 
 ([Playground](http://play.golang.org/p/oTup-9cN8l))
@@ -117,39 +117,39 @@ If you omit the loop condition it loops forever, so an infinite loop is compactl
 
 #### Example 1
 
-    package main
+      package main
 
-    import  "fmt"
+      import  "fmt"
 
-    func main() {
-        i := 12
-        if i<=10 {
-          fmt.Println("<10")
-        }else{
-          fmt.Println(">10")
-        }
-    }
+      func main() {
+          i := 12
+          if i<=10 {
+            fmt.Println("<10")
+          }else{
+            fmt.Println(">10")
+          }
+      }
 ([Playground](http://play.golang.org/p/NV8zQ3KNL9))
 
 #### Example 2
 
-    func main() {
+      func main() {
 
-    if 7%2 == 0 {
-        fmt.Println("7 is even")
-    } else {
-        fmt.Println("7 is odd")
-    }
+      if 7%2 == 0 {
+          fmt.Println("7 is even")
+      } else {
+          fmt.Println("7 is odd")
+      }
 
-    // A statement can precede conditionals; any variables  declared in this statement are available in all branches.
-    if num := 9; num < 0 {
-        fmt.Println(num, "is negative")
-    } else if num < 10 {
-        fmt.Println(num, "has 1 digit")
-    } else {
-        fmt.Println(num, "has multiple digits")
-    }
-}
+      // A statement can precede conditionals; any variables  declared in this statement are available in all branches.
+      if num := 9; num < 0 {
+          fmt.Println(num, "is negative")
+      } else if num < 10 {
+          fmt.Println(num, "has 1 digit")
+      } else {
+          fmt.Println(num, "has multiple digits")
+      }
+  }
 
 ([Playground](http://play.golang.org/p/2_PF8lI8ai))
 
@@ -246,6 +246,7 @@ A defer statement defers the execution of a function until the surrounding funct
     }
 
 ([Playground](http://play.golang.org/p/dgo5EepQiG))
+
 =====================================================================================
 ### continue keyword
       You can go to the beginning of the for loop using continue
@@ -268,6 +269,7 @@ A defer statement defers the execution of a function until the surrounding funct
     }
 
 ([Playground](http://play.golang.org/p/apY6Zh2TY9))
+
 ========================================================================================
 
 ### range keyword

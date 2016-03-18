@@ -20,10 +20,13 @@ For example :-
 var m map[string]int
 
 Where,
+```
 	m      => variable assigned
 	map    => key words to create a map
 	string => this describes the datatype of the keys in the maps
 	int    => this describes the datatype of the keys in the maps
+
+```
 
 Technically speaking, maps are references just like slices.
 so when you declare m as a map it's value will be nil. It does not have any values in it. It's an empty map.
@@ -69,3 +72,29 @@ Here
 'i' is assigned the value stored under the key 'routes'. If there is no value under 'routes', then the value is assigned to 0.
 
 'ok' is actually a boolean variable, which will hold true if the value is stored under 'routes' else it will hold false.
+
+Also,
+
+```
+_,ok := m['routes']
+
+```
+even this tests for an element but without assigning the value.
+
+Now for some example
+
+Lets try initializing a map
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    commits := map[string]int{
+    "rsc": 3711,
+    "r":   2138,
+    "gri": 1908,
+    "adg": 912,
+}
+}

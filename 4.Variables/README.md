@@ -15,14 +15,13 @@ Here, optional_data_type is a valid Go data type including byte, int, float32, c
 
 [Built-In Types](http://golang.org/ref/spec#Boolean_types)
 
-https://golang.org/doc/effective_go.html#variables
 
 
 
 ## Code Review
 ([Go Playground](http://play.golang.org/p/Zv45CSMaiD))
 
-[Declare and initialize variables](Example1/Example1.go) ([Go Playground](http://play.golang.org/p/6w6hBNE75a))
+[Declare and initialize variables](Example/Example1.go) ([Go Playground](http://play.golang.org/p/6w6hBNE75a))
 ([Go Playground](http://play.golang.org/p/Zv45CSMaiD))
 
 ## Exercises

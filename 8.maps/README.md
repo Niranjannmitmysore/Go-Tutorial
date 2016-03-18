@@ -27,7 +27,7 @@ Where,
 	m      => variable assigned
 	map    => key words to create a map
 	string => this describes the datatype of the keys in the maps
-	int    => this describes the datatype of the keys in the maps
+	int    => this describes the datatype of the values in the maps
 
 ```
 

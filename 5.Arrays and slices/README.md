@@ -44,18 +44,18 @@ The only difference between this and an array is the missing length between the 
 
 If you want to create a slice you should use the built-in make function:
 
-   x := make([]float64, 5)
+    x := make([]float64, 5)
 
 This creates a slice that is associated with an underlying float64 array of length 5.
 
-   x := make([]float64, 5, 8)
+    x := make([]float64, 5, 8)
 
 This creates a slice that is associated with an underlying float64 array of length 5 and 8 is the capacity.
 
-[Example](Example/Slices-Capacity.go)
+[Example](Examples/Slices-Capacity.go)
 
 #### Example
-[Slice Example](Example/slices-Example1.go) ([Go Playground](http://play.golang.org/p/LfhqQPvEak))
+[Slice Example](Examples/slices-Example1.go) ([Go Playground](http://play.golang.org/p/LfhqQPvEak))
 
 
 Another way to create slices is to use the [low : high] expression:

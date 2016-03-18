@@ -7,7 +7,7 @@ A function is a set of code enclosed within flower braces which (usually) perfor
 Example
 
 ```
-func main() {
+func method_name(arguements_1, arguements_2,.....) {
 	// Your code
 }
 

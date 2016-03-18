@@ -1,0 +1,56 @@
+Maps
+====
+
+We all are familar with the concept of hash tables and hashes.
+Hashes are name value pair allocated in memory block. They are a very effective way looking, adding and deleting data.
+
+In Go hash tables are known as maps.
+
+### Declaration and Initialization
+
+```
+map[KeyType]ValueType
+
+```
+
+where KeyType may be any type, and ValueType may be any type at all, including another map!
+
+For example :-
+
+var m map[string]int
+
+Where,
+	m      => variable assigned
+	map    => key words to create a map
+	string => this describes the datatype of the keys in the maps
+	int    => this describes the datatype of the keys in the maps
+
+Technically speaking, maps are references just like slices.
+so when you declare m as a map it's value will be nil. It does not have any values in it. It's an empty map.
+
+### Working with maps
+
+1)Setting a value
+
+m["route"] = 66
+
+2)Assigning a new variable
+
+i := m["route"]
+
+3)Finding length of map
+
+n := len(m)
+
+4)Remove an entry from map
+
+delete(m, "route")
+
+5)Tricky one. Testing for an element
+
+i, ok := m["route"]
+
+Here 
+'i' is assigned the value stored under the key 'routes'. If there is no value under 'routes', then the value is assigned to 0.
+
+'ok' is actually a boolean variable, which will hold true if the value is stored under 'routes' else it will hold false.

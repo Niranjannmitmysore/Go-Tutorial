@@ -23,11 +23,11 @@ You should see this:
 
 
 #### Example
-[Array Example](Example/arrays-Example1.go)([Go Playground](http://play.golang.org/p/9eRi-7q3YZ))
+[Array Example](Examples/arrays-Example1.go)([Go Playground](http://play.golang.org/p/9eRi-7q3YZ))
 
 ### Array with Parameters
 
-[Array with params Example](Example/Array-with-params.go)([Go Playground](http://play.golang.org/p/ug9dOvqE6N))
+[Array with params Example](Examples/Array-with-params.go)([Go Playground](http://play.golang.org/p/ug9dOvqE6N))
 
 
 
@@ -60,17 +60,17 @@ This creates a slice that is associated with an underlying float64 array of leng
 
 Another way to create slices is to use the [low : high] expression:
 
-    arr := [5]float64{1,2,3,4,5}
+     slice := [5]float64{1,2,3,4,5}
 
-low is the index of where to start the slice and high is the index where to end it (but not including the index itself). For example while arr[0:5] returns [1,2,3,4,5], arr[1:4] returns [2,3,4].
+low is the index of where to start the slice and high is the index where to end it (but not including the index itself). For example while slice[0:5] returns [1,2,3,4,5], slice[1:4] returns [2,3,4].
 
 #### Example
 
-[Slice Example] (Example/slices-Example2.go)      ([Go Playground](http://play.golang.org/p/T68jK-rlGf))
+[Slice Example] (Examples/slices-Example2.go)      ([Go Playground](http://play.golang.org/p/T68jK-rlGf))
 
 
 ### Sort
 
-[Sort Example] (Example/sort.go)      ([Go Playground](http://play.golang.org/p/fp7sXZJZaz))
+[Sort Example] (Examples/sort.go)      ([Go Playground](http://play.golang.org/p/fp7sXZJZaz))
 
 

@@ -27,6 +27,6 @@
       }
 
 
-([Playground](http://play.golang.org/p/a78yJaZR5C))
+([Playground](http://play.golang.org/p/YxGaFNIA4l))
 
 

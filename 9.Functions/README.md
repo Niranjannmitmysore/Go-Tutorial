@@ -1,8 +1,8 @@
 Function
 ====
 
-The idea of fucntion in Go is similar to that of C.
-A function is a set of code enclosed within flower braces which (usually) performs one set of operarion.
+The idea of function in Go is similar to that of C.
+A function is a set of code enclosed within flower braces which (usually) performs only one set of operarion.
 
 Example
 

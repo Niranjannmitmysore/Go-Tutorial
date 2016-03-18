@@ -17,7 +17,10 @@ where KeyType may be any type, and ValueType may be any type at all, including a
 
 For example :-
 
+```
 var m map[string]int
+
+```
 
 Where,
 ```

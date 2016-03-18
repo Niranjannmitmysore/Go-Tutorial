@@ -16,6 +16,8 @@
 
 * Variable names must start with a letter and may contain letters, numbers
 
+* Local and Global variables
+([examples](https://play.golang.org/p/QIx2ANNbTz))
 
 ## Links
 

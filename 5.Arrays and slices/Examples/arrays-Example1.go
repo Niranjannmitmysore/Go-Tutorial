@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func main() {
+
+  array := [...]int{10, 30,40,30}
+  fmt.Println(array)
+
   var x [5]float64
   x[0] = 98
   x[1] = 93

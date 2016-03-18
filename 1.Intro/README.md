@@ -1,8 +1,8 @@
 ## Intro to Golang
 
-Back to Basics! Go is a concurrent programming language created by ** Robert Griesemer, Rob Pike, and Ken Thompson  ** sand sponsored and introduced by Google in 2009. It’s been mentioned by the creators that Go was originally developed as a language for servers; but has grown, alongside its epic community, into something much more general purpose.
+ Go is a concurrent programming language created by Robert Griesemer, Rob Pike, and Ken Thompson . It was Sponsored and introduced by Google in 2009. It’s been mentioned by the creators that Go was originally developed as a language for servers; but has grown, alongside its epic community, into something much more general purpose.
 
-###Hello World!
+### Hello World!
 
   package main
 

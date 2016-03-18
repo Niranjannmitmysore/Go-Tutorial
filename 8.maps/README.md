@@ -32,23 +32,38 @@ so when you declare m as a map it's value will be nil. It does not have any valu
 
 1)Setting a value
 
+```
 m["route"] = 66
+
+```
 
 2)Assigning a new variable
 
+```
 i := m["route"]
+
+```
 
 3)Finding length of map
 
+```
 n := len(m)
+
+```
 
 4)Remove an entry from map
 
+```
 delete(m, "route")
+
+```
 
 5)Tricky one. Testing for an element
 
+```
 i, ok := m["route"]
+
+```
 
 Here 
 'i' is assigned the value stored under the key 'routes'. If there is no value under 'routes', then the value is assigned to 0.

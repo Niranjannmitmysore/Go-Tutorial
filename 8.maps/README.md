@@ -13,7 +13,7 @@ map[KeyType]ValueType
 
 ```
 
-where KeyType may be any type, and ValueType may be any type at all, including another map!
+where both KeyType and ValueType may be any type
 
 For example :-
 

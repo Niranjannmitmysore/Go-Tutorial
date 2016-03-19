@@ -91,7 +91,5 @@ func main() {
 
 ```
 ##### Try it online
-
-```
 ([Go Playground](http://play.golang.org/p/tEVN-vhyAi))
 

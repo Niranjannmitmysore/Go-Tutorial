@@ -23,42 +23,75 @@ return_type is the type which the method will return
 #### Sample Code
 
 ```
-/* define a method for circle */
-func(circle Circle) area() float64 {
-   return math.Pi * circle.radius * circle.radius
+type User struct {
+	FirstName, LastName string
+}
+
+func (u User) Greeting() string {
+	return fmt.Sprintf("Dear %s %s", u.FirstName, u.LastName)
 }
 
 In this code
-'circle' is a variable,
-whereas 'Circle' represents the receiver type
-of the function 'area'.
-And has to be defined previously as a struct type
+'u' is a variable,
+whereas 'User' represents the receiver type
+of the function 'Greeting'.
+And 'User' has to be defined previously as a struct type
 
 ```
 
-#### Examples to try yourself
+#### For example
 
 ```
 package main
 
 import (
-   "fmt"
-   "math"
+	"fmt"
 )
 
-/* define a circle */
-type Circle strut {
-   x,y,radius float64
+type User struct {
+	FirstName, LastName string
 }
 
-/* define a method for circle */
-func(circle Circle) area() float64 {
-   return math.Pi * circle.radius * circle.radius
+func (u User) Greeting() string {
+	return fmt.Sprintf("Dear %s %s", u.FirstName, u.LastName)
 }
 
-func main(){
-   circle := Circle(x:0, y:0, radius:5)
-   fmt.Printf("Circle area: %f", circle.area())
+func main() {
+	u := User{"Bhagirath", "Purushotham"}
+	fmt.Println(u.Greeting())
 }
 
 ```
+##### Try it online
+
+```
+([Go Playground](http://play.golang.org/p/ITVfJkCiwk))
+
+##### Working with pointers
+
+```
+package main
+
+import (
+	"fmt"
+)
+
+type User struct {
+	FirstName, LastName string
+}
+
+func (u *User) Greeting() string {
+	return fmt.Sprintf("Dear %s %s", u.FirstName, u.LastName)
+}
+
+func main() {
+	u := &User{"Bhagirath", "Purushotham"}
+	fmt.Println(u.Greeting())
+}
+
+```
+##### Try it online
+
+```
+([Go Playground](http://play.golang.org/p/tEVN-vhyAi))
+

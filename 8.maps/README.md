@@ -106,7 +106,7 @@ func main() {
 
 ```
 ##### Try online here
- ([Go Playground](https://play.golang.org/p/rReyVb16F2))
+([Go Playground](https://play.golang.org/p/rReyVb16F2))
 
 2) Looping a map
 
@@ -128,4 +128,4 @@ func main() {
 
 ```
 ##### Try online here
- ([Go Playground](https://play.golang.org/p/P37BTIT3fC))
+([Go Playground](https://play.golang.org/p/P37BTIT3fC))

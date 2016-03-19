@@ -63,8 +63,6 @@ func main() {
 
 ```
 ##### Try it online
-
-```
 ([Go Playground](http://play.golang.org/p/ITVfJkCiwk))
 
 ##### Working with pointers
